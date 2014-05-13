@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Lift::VERSION
   spec.authors       = ["ahawkins"]
   spec.email         = ["adam@hawkins.io"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Hash + Block initialization for easy object construction}
+  spec.description   = %q{}
+  spec.homepage      = "https://github.com/ahawkins/lift"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
