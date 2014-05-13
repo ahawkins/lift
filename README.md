@@ -1,5 +1,7 @@
 # Lift
 
+[![Build Status](https://travis-ci.org/ahawkins/lift.svg)](https://travis-ci.org/ahawkins/lift)
+
 Micro library for common pattern of initializing an object with a hash
 and yielding itself to a block. This pattern is repeated widely across
 the Ruby ecosystem. I duplicated this code across multiple projects
