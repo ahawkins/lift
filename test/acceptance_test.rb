@@ -22,6 +22,26 @@ class AcceptanceTest < MiniTest::Unit::TestCase
     assert_equal 'ahawkins', person.nick
   end
 
+  def test_accepts_responds_to_to_h
+    hashy_class = Class.new do
+      def to_h
+        {nick: 'ahawkins'}
+      end
+    end
+    person = Person.new hashy_class.new
+    assert_equal 'ahawkins', person.nick
+  end
+
+  def test_accepts_responds_to_to_hash
+    hashy_class = Class.new do
+      def to_hash
+        {nick: 'ahawkins'}
+      end
+    end
+    person = Person.new hashy_class.new
+    assert_equal 'ahawkins', person.nick
+  end
+
   def test_works_with_a_block
     person = Person.new do |person|
       person.nick = 'ahawkins'
